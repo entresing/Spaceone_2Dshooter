@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spaceone</title>
+    <!-- Orbitron: a bold sci-fi display font, a close web substitute for the
+         original SpeedwagonExpanded .vlw font (which p5.js cannot load). -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- p5.js from CDN (library only, no image/art assets) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.4/p5.min.js"></script>
+  </head>
+  <body>
+    <div id="game-container"></div>
+
+    <!-- Load order matters: base classes before the classes that extend them. -->
+    <script src="Characters.js"></script>
+    <script src="Enemy.js"></script>
+    <script src="BossEnemy.js"></script>
+    <script src="Player.js"></script>
+    <script src="Projectile.js"></script>
+    <script src="BossProjectile.js"></script>
+    <script src="Debris.js"></script>
+    <script src="Score.js"></script>
+    <script src="Crosshair.js"></script>
+    <script src="sketch.js"></script>
+  </body>
+</html>
